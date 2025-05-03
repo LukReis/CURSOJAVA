@@ -14,11 +14,10 @@ public class estruturaCondicional {
 
         if (imc < 18.5) {
             System.out.println("Abaixo do peso ideal. ");
+        } else if (imc < 25) {
+            System.out.println("Peso ideal. ");
         } else {
-            if (imc < 25) {
-            System.out.println("Abaixo do peso ideal. ");
-            }
-            
+            System.out.println("Acime do Peso ou Obesidade. ");
         }
 
         System.out.println("Fim do Programa. ");
