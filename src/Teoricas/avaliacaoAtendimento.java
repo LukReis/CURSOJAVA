@@ -13,17 +13,17 @@ public class avaliacaoAtendimento {
 
         if (nota == 1) {
 
-            descricaoNota = "Muito ruim";
+            descricaoNota = "Muito ruim ";
         } else if (nota == 2) {
-            descricaoNota = "Ruim";
+            descricaoNota = "Ruim ";
         } else if (nota == 3) {
-            descricaoNota = "Razoável";
+            descricaoNota = "Razoável ";
         } else if (nota == 4) {
-            descricaoNota = "Muito bom";
+            descricaoNota = "Muito bom ";
         } else if (nota == 5) {
-            descricaoNota = "Excelente";
+            descricaoNota = "Excelente ";
         } else {
-            descricaoNota = "Opção Invalida";
+            descricaoNota = "Opção Invalida ";
         }
     }
 }
