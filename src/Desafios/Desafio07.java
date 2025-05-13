@@ -21,7 +21,7 @@ public class Desafio07 {
 
         };
 
-        double tarifaFixa = valorEmprestimo <= 100 ? valorEmprestimo : valorEmprestimo + 1.50;
+        double tarifaFixa = valorEmprestimo >= 100 ? + 1.50 : 0;
 
         double totalJuros = valorEmprestimo * (taxaJuros / 100 * quantidadeParcelas);
         double custoTotal = valorEmprestimo + tarifaFixa + totalJuros;
