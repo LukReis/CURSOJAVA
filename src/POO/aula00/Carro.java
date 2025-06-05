@@ -7,4 +7,6 @@ public class Carro {
     String cor;
     int anoFabricacao;
 
+   Proprietario proprietario;
+
 }
