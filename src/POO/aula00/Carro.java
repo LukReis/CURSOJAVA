@@ -2,10 +2,11 @@ package POO.aula00;
 
 public class Carro {
 
-    String fabricante;
+    String fabricante = "Ford";
     String modelo;
     String cor;
-    int anoFabricacao;
+    int anoFabricacao = 2022;
+
 
    Proprietario proprietario;
 
