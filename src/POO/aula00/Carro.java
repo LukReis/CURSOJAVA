@@ -8,6 +8,6 @@ public class Carro {
     int anoFabricacao = 2022;
 
 
-   Proprietario proprietario;
+   Proprietario proprietario = new Proprietario();
 
 }

@@ -2,13 +2,32 @@ package POO.aula00;
 
 public class TesteInicializacao {
     public static void main(String[] args) {
+
+        Proprietario pessoa1 = new Proprietario();
+        pessoa1.nome = "João";
+
+        Proprietario pessoa2 = new Proprietario();
+        pessoa2.nome = "Pedro";
+
         Carro meuCarro = new Carro();
+        meuCarro.fabricante = "HR-V";
+        meuCarro.proprietario = pessoa1;
 
-        meuCarro.fabricante = "Honda";
-        meuCarro.anoFabricacao = 2021;
+        Carro seuCarro = new Carro();
+        seuCarro.modelo = "X6";
 
-        System.out.println(meuCarro.fabricante);
-        System.out.println(meuCarro.modelo);
-        System.out.println(meuCarro.anoFabricacao);
+        meuCarro.proprietario = pessoa1;
+        seuCarro.proprietario = pessoa1;
+
+        meuCarro.proprietario.nome = "Sebastião";
+
+        System.out.println(meuCarro.proprietario.nome);
+        System.out.println(meuCarro.proprietario.nome);
+
+       // System.out.println(pessoa1.nome);
+
+       // meuCarro.proprietario.nome = "Marcos";
+       // System.out.println(pessoa1.nome);
+
     }
 }
