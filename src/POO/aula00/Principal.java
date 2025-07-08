@@ -17,8 +17,8 @@ public class Principal {
         meuCarro.anoFabricacao = 2021;
         meuCarro.cor = "Preto";
         meuCarro.fabricante = "Honda";
+        meuCarro.precoCompra = 0;
         meuCarro.modelo = "HR-V";
-
         meuCarro.proprietario = eu;
 
         Carro seuCarro = new Carro();
@@ -27,25 +27,27 @@ public class Principal {
         seuCarro.cor = "Branco";
         seuCarro.fabricante = "BMW";
         seuCarro.modelo = "X6";
+        seuCarro.precoCompra = 980000;
         seuCarro.proprietario = voce;
 
-        System.out.println("Meu Carro");
-        System.out.println("----------");
-        System.out.printf("Modelo: %s%n", meuCarro.modelo);
-        System.out.printf("Ano: %d%n", meuCarro.anoFabricacao);
-        System.out.printf("Ano: %s%n", meuCarro.proprietario.nome);
+        double ipva = meuCarro.calcularIpva();
+        System.out.println(ipva);
 
-        System.out.println();
-
-        System.out.println("Seu Carro");
-        System.out.println("----------");
-        System.out.printf("Modelo: %s%n", seuCarro.modelo);
-        System.out.printf("Ano: %d%n", seuCarro.anoFabricacao);
-        System.out.printf("Ano: %s%n", seuCarro.proprietario.nome);
+        meuCarro.imprimirResumoDepreciacao();
 
 
-
-
-
+//        System.out.println("Meu Carro");
+//        System.out.println("----------");
+//        System.out.printf("Modelo: %s%n", meuCarro.modelo);
+//        System.out.printf("Ano: %d%n", meuCarro.anoFabricacao);
+//        System.out.printf("Ano: %s%n", meuCarro.proprietario.nome);
+//
+//        System.out.println();
+//
+//        System.out.println("Seu Carro");
+//        System.out.println("----------");
+//        System.out.printf("Modelo: %s%n", seuCarro.modelo);
+//        System.out.printf("Ano: %d%n", seuCarro.anoFabricacao);
+//        System.out.printf("Ano: %s%n", seuCarro.proprietario.nome);
     }
 }
