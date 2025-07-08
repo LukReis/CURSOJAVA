@@ -2,12 +2,18 @@ package Desafios.DesafioPOO02;
 
 public class FolhaPagamento {
 
-    double calcularSalario(int horasNormais, int horasExtras, double valorHorasNormais, double valorHorasExtras) {
+    double calcularSalario(int horasNormais, int horasExtras, ContratoTrabalho contrato) {
+    Funcionario funcionario = new Funcionario();
+    double valorHoraNormal = horasNormais * contrato.ValorHoraNormal;
+    double valorHoraExtra = horasExtras * contrato.valorHoraExtra;
 
-    double valorHoraNormal = horasNormais * valorHorasNormais;
-    double valorHoraExtra = horasExtras * valorHorasExtras;
+    double valorTotal = valorHoraExtra + valorHoraNormal;
 
-    return valorHoraExtra + valorHoraNormal;
+    if (funcionario.funcionarioPossuiFilhos()){
+        return valorTotal *= 1.10;
+    }
+
+    return valorTotal;
 
     }
 }
