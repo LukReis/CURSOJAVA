@@ -7,7 +7,7 @@ public class Principal {
 
         Funcionario funcionario = new Funcionario();
         funcionario.nome = "Lucas Mota";
-        funcionario.quantidadeDeFilhos = 5;
+        funcionario.quantidadeDeFilhos = 2;
 
         ContratoTrabalho contrato = new ContratoTrabalho();
         contrato.funcionario = funcionario;
@@ -15,9 +15,8 @@ public class Principal {
         contrato.valorHoraExtra = 67.84;
 
 
-        double salarioDevido = valorSalario.calcularSalario(160, 10, contrato);
-        System.out.printf("Salario Devido: R$ %.2f%n", salarioDevido);
+        Holerite holerite = valorSalario.calcularSalario(160, 10, contrato);
+        holerite.imprimir();
     }
 }
 
-//Salario Devido: R$ 9542,40

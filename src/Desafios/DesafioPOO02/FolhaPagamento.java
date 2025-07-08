@@ -2,18 +2,18 @@ package Desafios.DesafioPOO02;
 
 public class FolhaPagamento {
 
-    double calcularSalario(int horasNormais, int horasExtras, ContratoTrabalho contrato) {
-    Funcionario funcionario = new Funcionario();
-    double valorHoraNormal = horasNormais * contrato.ValorHoraNormal;
-    double valorHoraExtra = horasExtras * contrato.valorHoraExtra;
+    Holerite calcularSalario(int horasNormais, int horasExtras, ContratoTrabalho contrato) {
+    Holerite holerite = new Holerite();
+    holerite.funcionario = contrato.funcionario;
+    holerite.valorTotalHorasNormais = horasNormais * contrato.ValorHoraNormal;
+    holerite.valorTotalHorasExtras = horasExtras * contrato.valorHoraExtra;
 
-    double valorTotal = valorHoraExtra + valorHoraNormal;
+    double subtotal = holerite.valorTotalHorasNormais +  holerite.valorTotalHorasExtras;
 
-    if (funcionario.funcionarioPossuiFilhos()){
-        return valorTotal *= 1.10;
+    if (contrato.possuiAdicionalParaFilhos()){
+        holerite.valorAdicionalFilhos = subtotal *= 0.10;
     }
 
-    return valorTotal;
-
+    return holerite;
     }
 }
