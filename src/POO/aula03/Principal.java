@@ -5,7 +5,7 @@ public class Principal {
         Produto novoProduto = new Produto();
         Produto.custoEmbalagem = 10;
 //        novoProduto.precoCusto = 100;
-        novoProduto.alterarPrecuCusto(80);
+        novoProduto.alterarPrecuCusto(100);
 
 
         ServicoDePrecificacao servicoDePrecificacao = new ServicoDePrecificacao();

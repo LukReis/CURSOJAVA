@@ -16,12 +16,4 @@ public class Aeronave {
             System.out.println("Aeronave Desativada. Assentos não reservados.");
         }
     }
-
-    void desativar() {
-            ativo = false;
-    }
-
-    void ativar() {
-        ativo = true;
-    }
 }

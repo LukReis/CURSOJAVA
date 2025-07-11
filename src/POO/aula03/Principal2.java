@@ -5,13 +5,9 @@ public class Principal2 {
         Produto produto1 = new Produto();
         Produto produto2 = new Produto();
 
-//        produto1.custoEmbalagem = 10;
-//        produto2.custoEmbalagem = 15;
 
-        Produto.custoEmbalagem = 20;
+        Produto.alterarCustoEmbalagem(12);
+        Produto.imprimirCustoEmbalagem();
 
-
-        produto1.imprimirCustoEmbalagem();
-        produto2.imprimirCustoEmbalagem();
     }
 }

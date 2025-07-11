@@ -3,7 +3,7 @@ package POO.aula03;
 public class ServicoDePrecificacao {
 
     void definirPrecoVenda(Produto produto, double percentualMargemLucro) {
-        double precoVendaCalculado = produto.precoCusto * ((percentualMargemLucro / 100) +1);
+        double precoVendaCalculado = Matematica.calcularAcrecimo(produto.precoCusto, percentualMargemLucro);
         precoVendaCalculado += Produto.custoEmbalagem;
         produto.precoVenda = precoVendaCalculado;
     }
