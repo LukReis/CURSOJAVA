@@ -18,6 +18,7 @@ public class Principal {
 
     CadastroPortaria cadastroPortaria = new CadastroPortaria();
     cadastroPortaria.cadastrar(novoVisitante, 10);
+    cadastroPortaria.cadastrar(novoVisitante);
 
 
     }
