@@ -9,6 +9,14 @@ public class Aeronave {
         return totalAssentos - assentosReservados;
     }
 
+    void reservarAssentos(int numerosAssentos) {
+        if (ativo) {
+            assentosReservados += numerosAssentos;
+        } else {
+            System.out.println("Aeronave Desativada, Assentos não Reservados. ");
+        }
+    }
+
     void desativar() {
         ativo = false;
     }
