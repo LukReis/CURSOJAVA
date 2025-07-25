@@ -2,23 +2,20 @@ package POO.aula02;
 
 public class Principal {
     public static void main(String[] args) {
-        Aeronave aviaoGol = new Aeronave();
-        aviaoGol.totalAssentos = 100;
 
-        aviaoGol.reservarAssentos(10);
+        CalculadoraImc paciente = new CalculadoraImc();
+        Paciente joao = new Paciente();
 
-        System.out.printf("Gol (%s): %d assentos disponíveis%n" , aviaoGol.ativo ? "Ativo" : "Inativo",
-                aviaoGol.calcularAssentosDisponiveis());
+        joao.peso = 97;
+        joao.altura = 1.82;
 
-        Aeronave aviaoLatam = new Aeronave();
-        aviaoLatam.totalAssentos = 120;
+        IndiceMassaCorporal imc = paciente.calcular(joao);
 
-        aviaoLatam.reservarAssentos(5);
+        if (imc.estaComObesidade()) {
+            System.out.printf("Paciente com altura de %.2f e peso de %.2f " + "Está com obesidade%n", imc.altura, imc.peso);
+        }
 
-        System.out.printf("Latam (%s): %d assentos disponíveis%n" , aviaoLatam.ativo ? "Ativo" : "Inativo", aviaoLatam.calcularAssentosDisponiveis());
-
-
+        System.out.printf("IMC: %.2f%n", imc.resultado);
 
     }
-
 }
