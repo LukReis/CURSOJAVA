@@ -7,7 +7,7 @@ public class Principal {
 
         Scanner sc = new Scanner(System.in);
 
-        Visitante novoVisitante = new Visitante();
+        var novoVisitante = new Visitante();
 
         System.out.print("Digite seu nome: ");
         novoVisitante.nome = sc.nextLine();
@@ -16,7 +16,7 @@ public class Principal {
         novoVisitante.idade = sc.nextInt();
 
 
-    CadastroPortaria cadastroPortaria = new CadastroPortaria();
+    var cadastroPortaria = new CadastroPortaria();
     cadastroPortaria.cadastrar(novoVisitante, 10);
     cadastroPortaria.cadastrar(novoVisitante);
 
