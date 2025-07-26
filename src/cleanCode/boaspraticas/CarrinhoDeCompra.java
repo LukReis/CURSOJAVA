@@ -14,6 +14,7 @@ public class CarrinhoDeCompra {
 
         if (pagamentoAutorizado) {
             imprimirRecibo(valorTotal);
+
         }
     }
 
