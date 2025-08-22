@@ -5,16 +5,19 @@ public class Principal {
         Turma turmaB = new Turma();
         turmaB.identificacao = "Maternal B";
         turmaB.nomeProfessora = "Tia Maria";
-        turmaB.alunos = new Aluno[3];
-
-        turmaB.alunos[0] = new Aluno();
-        turmaB.alunos[0].nome = "João";
-        turmaB.alunos[0].idade = 18;
 
         Aluno aluno1 = new Aluno();
         aluno1.nome = "Lucas";
         aluno1.idade = 25;
 
-        turmaB.alunos[1] = aluno1;
+        Aluno aluno2 = new Aluno();
+        aluno2.nome = "Nicoly";
+        aluno2.idade = 22;
+
+        turmaB.adicionarAluno(aluno1);
+        turmaB.adicionarAluno(aluno2);
+
+        turmaB.imprimirListaDeAlunos();
+
     }
 }
