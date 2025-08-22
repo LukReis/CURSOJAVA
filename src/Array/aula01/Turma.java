@@ -1,24 +1,25 @@
 package Array.aula01;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Turma {
 
     String identificacao;
     String nomeProfessora;
-    Aluno[] alunos = new Aluno[0];
+    ArrayList<Aluno> alunos = new ArrayList<>();
 
     void adicionarAluno(Aluno aluno) {
-        this.alunos = Arrays.copyOf(this.alunos, this.alunos.length +1);
-        alunos[alunos.length - 1] = aluno;
+       alunos.add(aluno);
+    }
+
+    void removerAluno(int indice) {
+        alunos.remove(indice);
     }
 
     void imprimirListaDeAlunos() {
         for (Aluno aluno : alunos) {
             if (aluno != null) {
                 System.out.printf("%s (%d anos)%n", aluno.nome, aluno.idade);
-            } else {
-                System.out.println("Vago");
             }
         }
     }
