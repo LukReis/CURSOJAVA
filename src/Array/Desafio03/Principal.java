@@ -1,4 +1,4 @@
-package Array.Desafio02;
+package Array.Desafio03;
 
 public class Principal {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Principal {
 
         cardapio.removerItem(0);
 
-        System.out.println("---");
+        System.out.println("-------------------");
 
         cardapio.imprimirItensCardapio(0, 150);
     }
