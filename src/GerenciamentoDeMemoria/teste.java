@@ -5,7 +5,12 @@ public class teste {
         imprimirUsoMemoria();
 
         byte[] x =  new byte[500 * 1024 * 1024];
-        byte[] y =  new byte[500 * 1024 * 1024];
+        imprimirUsoMemoria();
+        x = null;
+
+        System.gc();
+
+        byte[] y = new byte[10 * 1024 * 1024];
 
         imprimirUsoMemoria();
     }
