@@ -9,8 +9,7 @@ public class Participante {
 
 
     Participante(String nome) {
-        Objects.requireNonNull(nome, "Nome é Obrigatorio");
-        this.nome = nome;
+        this(nome,0);
     }
 
     Participante(String nome, int saldoDePontosInicial) {
