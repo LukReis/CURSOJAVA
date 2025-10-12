@@ -37,9 +37,4 @@ public class Produto {
      return UUID.randomUUID().toString();
  }
 
-
-
-
-
-
 }
