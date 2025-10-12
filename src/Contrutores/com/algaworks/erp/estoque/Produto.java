@@ -7,9 +7,9 @@ public class Produto {
 
     static final int QUANTIDADE_ESTOQUE_INICIAL = 100;
 
-    final String codigo;
-    String nome;
-    int quantidadeEstoque;
+    private final String codigo;
+    private String nome;
+    private int quantidadeEstoque;
 
  public Produto() {
     this("sem nome");
@@ -30,7 +30,11 @@ public class Produto {
 
      this.nome = nome;
      this.quantidadeEstoque = estoqueInicial;
-     this.codigo = UUID.randomUUID().toString();
+     this.codigo = gerarCodigo();
+ }
+
+ private String gerarCodigo() {
+     return UUID.randomUUID().toString();
  }
 
 

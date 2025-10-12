@@ -9,7 +9,7 @@ public class Principal {
     public static void main(String[] args) {
         Pedido pedido = new Pedido();
 
-        Produto produto = new Produto();
+        Produto produto = new Produto("sem nome");
 
         java.lang.System.out.println("Olá");
     }
