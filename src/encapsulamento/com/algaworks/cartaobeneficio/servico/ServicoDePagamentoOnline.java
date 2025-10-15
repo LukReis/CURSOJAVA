@@ -11,6 +11,6 @@ public class ServicoDePagamentoOnline {
 
         cartao.debitar(valor);
 
-        return new Recibo(cartao.obterTitular(), "Pagamento", valor);
+        return new Recibo(cartao.getTitular(), "Pagamento", valor);
     }
 }
